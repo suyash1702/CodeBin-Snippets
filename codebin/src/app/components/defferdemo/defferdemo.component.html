@@ -1,7 +1,20 @@
 
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sequi distinctio magni hic eius consectetur natus autem et. Atque hic quaerat eligendi! Expedita, quae vitae dicta enim nostrum nihil quia!</p>
+
 <button type="button" #greeting>Hello!</button>
 
+<p>
+  This code demonstrates a deferred loading mechanism for an Angular component with the following key features:
+  <ul>
+    <li><strong>Deferred Loading:</strong> The <code>&lt;app-heavy&gt;</code> component is loaded only when the user hovers over the "Hello!" button. This approach helps in improving performance by delaying the loading of resource-intensive components.</li>
+    <li><strong>Placeholder Content:</strong> While waiting for the <code>&lt;app-heavy&gt;</code> component to load, a placeholder message ("this is place holder") is displayed to inform the user that content will appear soon.</li>
+    <li><strong>Loading State:</strong> If the loading process takes more than 100 milliseconds, a "Content is loading" message is shown. This provides feedback to the user that the component is being fetched and helps manage user expectations.</li>
+    <li><strong>Error Handling:</strong> If an error occurs while loading the <code>&lt;app-heavy&gt;</code> component, an error message ("Error while loading heavy component") is displayed. This helps in notifying the user about issues during the component loading process.</li>
+  </ul> 
+<p>
+
+
+<!-- Defer, placeholder, loading, and error states are hypothetical and will need to be implemented accordingly -->
 @defer(on hover(greeting)){
   <app-heavy></app-heavy>  
 }@placeholder{
@@ -10,6 +23,7 @@
 @loading(after 100ms; minimum 1s){
     <h3>Content is loading</h3>
 }@error{
-    <h3>Error while loading heavy componet</h3>
+    <h3>Error while loading heavy component</h3>
 }
+
 

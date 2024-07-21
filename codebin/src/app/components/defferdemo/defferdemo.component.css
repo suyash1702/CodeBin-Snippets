@@ -1,5 +1,56 @@
-p{
-    height: 100vh;
-    border: 2px solid black;
-    margin: 10px;
-}
+/* General styles for the component */
+:host {
+    display: block;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Style for the paragraph */
+  p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  /* Style for the button */
+  button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style for the placeholder message */
+  h3.placeholder {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #888;
+    text-align: center;
+  }
+  
+  /* Style for the loading state */
+  h3.loading {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #007bff;
+    text-align: center;
+  }
+  
+  /* Style for the error message */
+  h3.error {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #dc3545;
+    text-align: center;
+  }
+  
