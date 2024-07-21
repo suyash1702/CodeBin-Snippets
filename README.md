@@ -2,6 +2,39 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.0.
 
+Steps :
+create new app in angular 
+Certainly! Let's create an Angular project step by step. Here's a concise guide:
+
+1. **Install Angular CLI** (Command Line Interface):
+   - If you haven't already, install Angular CLI globally using npm:
+     ```
+     npm install -g @angular/cli
+     ```
+
+2. **Create a New Angular Project**:
+   - Run the following command to create a new project (replace `myNewApp` with your desired project name):
+     ```
+     ng new myNewApp
+     ```
+   - Choose 'yes' for routing and select either CSS or SCSS for styling.
+
+3. **Navigate to Your Project Directory**:
+   - Change into your project directory:
+     ```
+     cd myNewApp
+     ```
+
+4. **Start the Development Server**:
+   - Launch the application with the following command:
+     ```
+     ng serve --open
+     ```
+   - The `--open` flag opens your browser to [http://localhost:4200](http://localhost:4200), where you'll see your Angular app running.
+
+5. **Create Components**, configure routes, and add content to your components as needed.
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
